@@ -1,0 +1,12 @@
+{
+  "h1": "School Toolkit",
+  "change-locale": "Change locale",
+  "to-secondPage": "To second page",
+  "to-subjects": "To subjects",
+  "to-subject": "To subject",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server",
+  "subjects": {
+    "title": "Subjects"
+  }
+}
