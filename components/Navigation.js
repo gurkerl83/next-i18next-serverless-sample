@@ -1,8 +1,6 @@
 import React from 'react';
 
-import getNextI18NextInstance from '../i18n';
-
-const { i18n, Link, useTranslation } = getNextI18NextInstance;
+import { i18n, Link, useTranslation } from '../i18n';
 
 const Navigation = () => {
   const { t } = useTranslation(['common']);

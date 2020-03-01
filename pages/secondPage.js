@@ -2,9 +2,7 @@ import React from 'react';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import getNextI18NextInstance from '../i18n';
-
-const { Link, useTranslation } = getNextI18NextInstance;
+import { Link, useTranslation } from '../i18n';
 
 const SecondPage = () => {
   const { t } = useTranslation(['secondPage', 'footer']);

@@ -1,9 +1,7 @@
-import App from "next/app";
-import React from "react";
+import App from 'next/app';
+import React from 'react';
 
-import getNextI18NextInstance from "../i18n";
-
-const { appWithTranslation } = getNextI18NextInstance;
+import { appWithTranslation } from '../i18n';
 
 class MyApp extends App {
   render() {

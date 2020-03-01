@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import getNextI18NextInstance from '../i18n';
-
-const { useTranslation } = getNextI18NextInstance;
+import { useTranslation } from '../i18n';
 
 const Error = ({ statusCode }) => {
   const { t } = useTranslation('common');

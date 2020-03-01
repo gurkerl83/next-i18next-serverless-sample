@@ -2,9 +2,7 @@ import { version } from 'next-i18next-serverless/package.json';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import getNextI18NextInstance from '../i18n';
-
-const { withTranslation } = getNextI18NextInstance;
+import { withTranslation } from '../i18n';
 
 const Footer = ({ t }) => (
   <footer>

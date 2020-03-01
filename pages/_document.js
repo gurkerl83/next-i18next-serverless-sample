@@ -1,9 +1,9 @@
 import { compose } from 'compose-middleware';
-import { nextI18NextMiddleware } from 'next-i18next-serverless/dist/commonjs/middlewares/next-i18next-middleware';
+import nextI18NextMiddleware from 'next-i18next-serverless/dist/commonjs/middlewares/next-i18next-middleware';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
 
-import getNextI18NextInstance from '../i18n';
+import { NextI18NextInstance } from '../i18n';
 
 export const composeTestMiddleware = (req, res) => middlewares => {
   const handler = compose(middlewares);
@@ -20,8 +20,7 @@ export const composeTestMiddleware = (req, res) => middlewares => {
 };
 
 export const instantiateTestMiddleware = (req, res) => {
-  const instance = getNextI18NextInstance;
-  composeTestMiddleware(req, res)(nextI18NextMiddleware(instance));
+  composeTestMiddleware(req, res)(nextI18NextMiddleware(NextI18NextInstance));
 };
 
 class MyDocument extends Document {
