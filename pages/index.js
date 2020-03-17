@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import getNextI18NextInstance from "../i18n";
-import Navigation from "../components/Navigation";
-
-const { i18n, Link, useTranslation } = getNextI18NextInstance;
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Navigation from '../components/Navigation';
+import { useTranslation } from '../i18n';
 
 const Homepage = () => {
-  const { t } = useTranslation(["common", "footer"]);
+  const { t } = useTranslation(['common', 'footer']);
 
   return (
     <React.Fragment>
@@ -16,7 +14,7 @@ const Homepage = () => {
         <Navigation />
       </nav>
       <main>
-        <Header title={t("h1")} />
+        <Header title={t('h1')} />
       </main>
       <Footer />
     </React.Fragment>

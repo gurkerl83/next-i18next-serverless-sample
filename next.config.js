@@ -5,10 +5,6 @@ module.exports = {
 
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 
-  publicRuntimeConfig: {
-    rootDir: __dirname
-  },
-
   webpack: (config, { isServer }) => {
     config.mode = 'production';
 
